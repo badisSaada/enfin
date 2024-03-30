@@ -14,7 +14,7 @@ export class AboutComponent {
     name: "Badis",
     email: "brunquersb@helha.be",
     phone: "+32 498 56 25 13",
-    angularLevel: "novice"
+    angularLevel: "neophyte"
   }
 
   commentsList = [
