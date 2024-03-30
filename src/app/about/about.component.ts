@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class AboutComponent {
   user = {
-    name: "Benjamin",
+    name: "Badis",
     email: "brunquersb@helha.be",
     phone: "+32 498 56 25 12",
     angularLevel: "novice"
