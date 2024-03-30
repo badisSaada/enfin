@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-header">
+    Beautiful About component
+  </div>
+
+  <div class="input-group p-4">
+    <span class="input-group-text"> Votre niveau en Angular :</span>
+    <input type="text" [(ngModel)]="user.angularLevel" type="text" class="form-control" />
+  </div>
+  <ul>
+    <li>Nom: {{ user.name }}</li>
+    <li>Email: {{ user.email }}</li>
+    <li>Téléphone: {{ user.phone }}</li>
+    <li>Votre niveau Angular: {{ user.angularLevel }}</li>
+  </ul>
+
+  <div class="input-group p-4">
+    <span class="input-group-text"> Comment:</span>
+    <input #commentInput type="text" type="text" class="form-control" />
+    <button class="btn btn-primary" (click)="addComment(commentInput.value)">Add a comment</button>
+  </div>
+
+</div>
+
+<app-comments-list (removeCommentEvent)="removeEvent($event)" [comments]="commentsList"></app-comments-list>

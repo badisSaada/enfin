@@ -1,0 +1,9 @@
+<div class="card mt-4">
+  <div class="card-header">
+    Beautiful Comments list component
+  </div>
+  @for (comment of comments; track $index) {
+  <app-comment (removeCommentEvent)="removeComment($event)" [content]="comment.content" [created]="comment.created"
+    [id]="comment.id"></app-comment>
+  }
+</div>
